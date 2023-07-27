@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.heading{
+    color: yellow;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0, 0, 0.5);
+    position: sticky;
+    top:0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 1rem 0rem;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0, 0, 0.5);
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img3.jpg') no-repeat center center/cover;
+    height: 120vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: .8;
+}
+
+
+.mian{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+
+}
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0rem;
+
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    font-size: 1rem;
+    background-color: ivory;
+    
+   
+
+}
+.btn:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 5px black;
+    font-weight: bold;
+   
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+
+}
+/* about section */
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 3rem;
+    margin-left: 3rem;
+    color: white;
+    
+   
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: aqua;
+}
+#about{
+  
+   background-color: black;
+    color: yellow;
+
+}
+
+h3{
+    color: indianred;
+}
+
+/*services section */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem;
+  background-color: black;
+    color: white;
+
+   
+}
+#services h2{
+    color: aqua;
+}
+
+.row{
+    display: flex;
+   
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 90rem;
+    height: 20rem;
+    margin-left: 3rem;
+  
+}
+
+/* contact section*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   background-color: black;
+    color: white;
+    padding: 2rem;
+    
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 2rem;
+    
+    
+}
+.input{
+    margin: 1rem;
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 30px;  
+}
+#msg{
+    margin: 1rem;
+}
+#send{
+    margin: 1rem;
+    padding: 0.5rem;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.bg{
+    background-color: black;
+}
